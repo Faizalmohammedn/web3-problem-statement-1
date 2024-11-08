@@ -1,0 +1,1298 @@
+<style>
+    .crypto-insurance-section {
+      background-color: #000;
+      display: flex;
+      padding: 58px 0 0;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    
+    .header-container {
+      z-index: 10;
+      display: flex;
+      margin-left: 157px;
+      width: 100%;
+      max-width: 1215px;
+      flex-direction: column;
+    }
+    
+    @media (max-width: 991px) {
+      .header-container {
+        max-width: 100%;
+      }
+    }
+    
+    .nav-wrapper {
+      align-self: flex-end;
+      width: 950px;
+      max-width: 100%;
+    }
+    
+    .nav-content {
+      display: flex;
+      gap: 20px;
+    }
+    
+    @media (max-width: 991px) {
+      .nav-content {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    }
+    
+    .logo-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 21%;
+      margin-left: 0;
+    }
+    
+    @media (max-width: 991px) {
+      .logo-column {
+        width: 100%;
+      }
+    }
+    
+    .logo {
+      aspect-ratio: 2.12;
+      object-fit: contain;
+      object-position: center;
+      width: 223px;
+      max-width: 100%;
+      flex-grow: 1;
+    }
+    
+    .nav-column {
+    display: flex;
+    flex-direction: row; 
+    line-height: normal;
+    margin-left: 20px; 
+}
+    
+    @media (max-width: 991px) {
+    .nav-column {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+    
+.nav-container {
+    display: flex;
+    margin-top: 27px;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    gap: 10px; /* Adjust the gap between flex items */
+}
+
+.nav-container > * {
+    margin: 0; /* Ensure there's no extra margin on child elements */
+    padding: 0; /* Remove any default padding */
+}
+    
+    @media (max-width: 991px) {
+      .nav-container {
+        max-width: 100%;
+      }
+    }
+    
+    .navigation {
+      align-self: stretch;
+      display: flex;
+      min-width: 240px;
+      padding-top: 8px;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 615px;
+      margin: auto 0;
+    }
+    
+    @media (max-width: 991px) {
+      .navigation {
+        max-width: 100%;
+      }
+    }
+    
+    .nav-list {
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+    
+    @media (max-width: 991px) {
+      .nav-list {
+        max-width: 100%;
+      }
+    }
+    
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      justify-content: flex-start;
+      padding: 0 0 9px 30px;
+      font: 600 16px/1 Inter, sans-serif;
+    }
+    
+    .nav-item-claims {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      white-space: nowrap;
+      justify-content: flex-start;
+      padding: 0 0 9px 30px;
+      font: 600 16px/1 Inter, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .nav-item-claims {
+        white-space: initial;
+      }
+    }
+    
+    .nav-item-ecosystem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      white-space: nowrap;
+      justify-content: flex-start;
+      padding: 0 0 9px 30px;
+      font: 600 16px/1 Inter, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .nav-item-ecosystem {
+        white-space: initial;
+      }
+    }
+    
+    .nav-item-learn {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      width: 89px;
+    }
+    
+    .nav-item-learn-content {
+      z-index: 10;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3px 0 3px 30px;
+    }
+    
+    @media (max-width: 991px) {
+      .nav-item-learn-content {
+        padding-left: 20px;
+      }
+    }
+    
+    .button-menu {
+      display: flex;
+      width: 65px;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .button-text {
+      align-self: stretch;
+      color: #fff;
+      white-space: nowrap;
+      margin: auto 0;
+      font: 600 16px/1 Inter, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .button-text {
+        white-space: initial;
+      }
+    }
+    
+    .arrow-wrapper {
+      align-self: stretch;
+      display: flex;
+      padding-left: 6px;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 20px;
+      max-width: 71px;
+      margin: auto 0;
+    }
+    
+    .arrow-icon {
+      display: flex;
+      width: 14px;
+      flex-direction: column;
+      overflow: hidden;
+      justify-content: flex-start;
+    }
+    
+    .arrow-icon-fill {
+      display: flex;
+      min-height: 14px;
+      width: 100%;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .arrow-img {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+    }
+    
+    .nav-item-blog {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      white-space: nowrap;
+      justify-content: flex-start;
+      padding: 0 0 9px 30px;
+      font: 600 16px/1 Inter, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .nav-item-blog {
+        white-space: initial;
+      }
+    }
+    
+    .nav-item-spacer {
+      display: flex;
+      width: 24px;
+      height: 3px;
+      flex-grow: 1;
+    }
+    
+    .cta-wrapper {
+      align-self: stretch;
+      display: flex;
+      padding-left: 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      color: #fff;
+      text-align: center;
+      justify-content: flex-start;
+      width: 208px;
+      margin: auto 0;
+      font: 600 17px/2 Inter, sans-serif;
+    }
+    
+    .cta-button {
+      display: flex;
+      max-width: 100%;
+      width: 184px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .cta-text {
+      border-radius: 50px;
+      background-color: rgba(132, 101, 216, 0.97);
+      width: 100%;
+      padding: 12px 35px;
+    }
+    
+    @media (max-width: 991px) {
+      .cta-text {
+        padding: 12px 20px;
+      }
+    }
+    
+    .hero-heading {
+      align-self: flex-start;
+      display: flex;
+      margin-top: 170px;
+      flex-direction: column;
+      color: #fff;
+      letter-spacing: -1px;
+      justify-content: flex-start;
+      padding: 40px 0 10px;
+      font: 700 62px/73px Inter, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .hero-heading {
+        max-width: 100%;
+        margin-top: 40px;
+        font-size: 40px;
+        line-height: 52px;
+      }
+    }
+    
+    .hero-heading-text {
+      padding-bottom: 10px;
+    }
+    
+    @media (max-width: 991px) {
+      .hero-heading-text {
+        max-width: 100%;
+        font-size: 40px;
+        line-height: 52px;
+      }
+    }
+    
+    .hero-image {
+      background-color: #000;
+      display: flex;
+      margin-top: -72px;
+      height: 388px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      justify-content: flex-start;
+      font: 400 20px/31px Inter, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .hero-image {
+        max-width: 100%;
+      }
+    }
+    
+    .hero-text-wrapper {
+      display: flex;
+      width: 703px;
+      max-width: 100%;
+      padding-bottom: 20px;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    
+    .hero-text {
+      width: 100%;
+      padding: 4px 0 5px;
+    }
+    
+    @media (max-width: 991px) {
+      .hero-text {
+        max-width: 100%;
+      }
+    }
+    
+    .hero-img {
+      aspect-ratio: 1.62;
+      object-fit: contain;
+      object-position: center;
+      width: 903px;
+      max-width: 100%;
+    }
+    
+    .stats-section {
+      background-color: #fff;
+      z-index: 10;
+      display: flex;
+      margin-top: -7px;
+      min-height: 396px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 56px 0;
+    }
+    
+    @media (max-width: 991px) {
+      .stats-section {
+        max-width: 100%;
+      }
+    }
+    
+    .stats-heading {
+      align-self: stretch;
+      width: 100%;
+      color: #182233;
+      text-align: center;
+      padding: 20px 446px 72px 466px;
+      font: 700 37px/1 Inter, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .stats-heading {
+        max-width: 100%;
+        padding: 20px;
+      }
+    }
+    
+    .stats-container {
+      display: flex;
+      width: 1260px;
+      max-width: 100%;
+      padding-bottom: 40px;
+      flex-direction: column;
+      font-family: Inter, sans-serif;
+      text-align: center;
+      justify-content: flex-start;
+    }
+    
+    .stats-grid {
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+      gap: 40px 169px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      padding: 0 83px 0 85px;
+    }
+    
+    @media (max-width: 991px) {
+      .stats-grid {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+    }
+    
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .stat-value {
+      display: flex;
+      padding-bottom: 10px;
+      flex-direction: column;
+      font-size: 47px;
+      color: #002332;
+      font-weight: 700;
+      white-space: nowrap;
+      line-height: 1;
+      justify-content: flex-start;
+    }
+    
+    @media (max-width: 991px) {
+      .stat-value {
+        font-size: 40px;
+        white-space: initial;
+      }
+    }
+    
+    .stat-label {
+      color: #616d7e;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 2;
+    }
+    
+    .explore-data {
+      display: flex;
+      width: 121px;
+      max-width: 100%;
+      flex-direction: column;
+      padding: 2px 0;
+    }
+    
+    .explore-arrow {
+      display: flex;
+      min-height: 18px;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 4px 0 4px 106px;
+    }
+    
+    @media (max-width: 991px) {
+      .explore-arrow {
+        padding-left: 20px;
+      }
+    }
+    
+    .explore-arrow-img {
+      aspect-ratio: 1.4;
+      object-fit: contain;
+      object-position: center;
+      width: 14px;
+    }
+    
+    .explore-text {
+      color: #000;
+      text-align: center;
+      align-self: flex-start;
+      z-index: 10;
+      margin-top: -16px;
+      font: 600 17px/2 Inter, sans-serif;
+    }
+    
+    .cover-section {
+      display: flex;
+      margin-top: 42px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 82px 0 82px 42px;
+    }
+    
+    @media (max-width: 991px) {
+      .cover-section {
+        max-width: 100%;
+        padding-left: 20px;
+        margin-top: 40px;
+      }
+    }
+    
+    .cover-heading {
+      display: flex;
+      width: 432px;
+      max-width: 100%;
+      flex-direction: column;
+      color: #fff;
+      text-align: center;
+      letter-spacing: -0.88px;
+      justify-content: flex-start;
+      font: 700 41px/1 Inter, sans-serif;
+    }
+    
+    .cover-heading-text {
+      width: 100%;
+    }
+    
+    @media (max-width: 991px) {
+      .cover-heading-text {
+        max-width: 100%;
+      }
+    }
+    
+    .cover-description {
+      width: 1140px;
+      max-width: 100%;
+      color: #fff;
+      text-align: center;
+      margin: 20px 0 0 42px;
+      padding: 4px 0;
+      font: 400 17px/2 Inter, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .cover-description {
+        max-width: 100%;
+      }
+    }
+    
+    .cover-grid {
+      width: 1140px;
+      max-width: 100%;
+      margin: 42px 0 0 49px;
+    }
+    @media (max-width: 991px) {
+      .cover-grid {
+        margin-top: 40px;
+      }
+    }
+    
+    .cover-row {
+      gap: 20px;
+      display: flex;
+    }
+    
+    @media (max-width: 991px) {
+      .cover-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    }
+    
+    .cover-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 50%;
+      margin-left: 0;
+    }
+    
+    @media (max-width: 991px) {
+      .cover-column {
+        width: 100%;
+      }
+    }
+    
+    .cover-item {
+      border-radius: 12px;
+      background-color: #030303;
+      display: flex;
+      min-height: 146px;
+      width: 100%;
+      align-items: center;
+      gap: 24px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      padding: 33px 17px;
+      border: 1px solid rgba(22, 0, 66, 0.04);
+    }
+    
+    @media (max-width: 991px) {
+      .cover-item {
+        margin-top: 40px;
+      }
+    }
+    
+    .cover-icon {
+      border-radius: 80px;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 23px 23px 48px -8px rgba(22, 0, 66, 0.04);
+      align-self: stretch;
+      display: flex;
+      min-height: 80px;
+      align-items: center;
+      overflow: hidden;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      margin: auto 0;
+      padding: 0 16px;
+    }
+    
+    .cover-icon-wrapper {
+      align-self: stretch;
+      display: flex;
+      width: 100%;
+      max-width: 80px;
+      flex-direction: column;
+      overflow: hidden;
+      justify-content: flex-start;
+      flex: 1;
+      flex-basis: 0;
+      margin: auto 0;
+    }
+    
+    .cover-icon-fill {
+      display: flex;
+      min-height: 48px;
+      width: 100%;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .cover-icon-img {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 48px;
+    }
+    
+    .cover-content {
+      align-self: stretch;
+      display: flex;
+      min-width: 240px;
+      flex-direction: column;
+      font-family: Inter, sans-serif;
+      justify-content: flex-start;
+      width: 318px;
+      margin: auto 0;
+    }
+    
+    .cover-title {
+      width: 100%;
+      font-size: 19px;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: -0.6px;
+      line-height: 1.6;
+    }
+    
+    .cover-description {
+      margin-top: 8px;
+      width: 100%;
+      font-size: 15px;
+      color: rgba(216, 223, 233, 0.8);
+      font-weight: 400;
+      letter-spacing: -0.32px;
+      line-height: 29px;
+    }
+    
+    .explore-cover {
+      align-self: stretch;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 67px 769px 5px 811px;
+    }
+    
+    @media (max-width: 991px) {
+      .explore-cover {
+        max-width: 100%;
+        padding: 67px 20px 5px;
+      }
+    }
+    
+    .explore-cover-wrapper {
+      display: flex;
+      max-width: 100%;
+      width: 106px;
+    }
+    
+    .explore-cover-arrow {
+      display: flex;
+      margin-right: -104px;
+      min-height: 14px;
+      padding-left: 91px;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: flex-end;
+      justify-content: center;
+      flex: 1;
+    }
+    
+    .explore-cover-img {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 14px;
+    }
+    
+    .explore-cover-text {
+      color: #fff;
+      text-align: center;
+      flex-grow: 1;
+      width: 83px;
+      font: 600 13px/2 Inter, sans-serif;
+    }
+    
+    .metamask-section {
+      background-color: #f7f9fd;
+      display: flex;
+      min-height: 268px;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      color: #002332;
+      text-align: center;
+      justify-content: flex-start;
+      padding: 60px 203px 25px 265px;
+      font: 300 26px/48px Inter, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .metamask-section {
+        max-width: 100%;
+        padding: 60px 20px 25px;
+      }
+    }
+    
+    .metamask-container {
+      display: flex;
+      max-width: 100%;
+      width: 1260px;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .metamask-text {
+      width: 100%;
+      flex: 1;
+      padding: 19px 12px 21px;
+    }
+    
+    @media (max-width: 991px) {
+      .metamask-text {
+        max-width: 100%;
+      }
+    }
+    
+    .partners-section {
+      align-self: center;
+      display: flex;
+      margin-top: 45px;
+      width: 1050px;
+      max-width: 100%;
+      flex-direction: column;
+      overflow: hidden;
+      justify-content: flex-start;
+    }
+    
+    @media (max-width: 991px) {
+      .partners-section {
+        margin-top: 40px;
+      }
+    }
+    
+    .partners-row {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      overflow: hidden;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      padding: 50px 0;
+    }
+    
+    @media (max-width: 991px) {
+      .partners-row {
+        max-width: 100%;
+      }
+    }
+    
+    .partner-logo {
+      align-self: stretch;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+      justify-content: flex-start;
+      width: 153px;
+      margin: auto 0;
+    }
+    
+    .partner-img {
+      aspect-ratio: 3.03;
+      object-fit: contain;
+      object-position: center;
+      width: 103px;
+      max-width: 100%;
+    }
+    
+    .features-section {
+      align-self: center;
+      z-index: 10;
+      display: flex;
+      width: 1050px;
+      max-width: 100%;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+      font-family: Montserrat, sans-serif;
+      color: #e5e2e2;
+      text-align: center;
+      justify-content: flex-start;
+      margin: -151px 0 0 31px;
+      padding: 110px 0 96px;
+    }
+    
+    @media (max-width: 991px) {
+      .features-section {
+        padding-top: 100px;
+        margin-left: 0;
+      }
+    }
+    
+    .features-row {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      overflow: hidden;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+    
+    @media (max-width: 991px) {
+      .features-row {
+        max-width: 100%;
+      }
+    }
+    
+    .feature-column {
+      align-self: stretch;
+      display: flex;
+      min-width: 240px;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: center;
+      justify-content: flex-start;
+      width: 328px;
+      margin: auto 0;
+    }
+    
+    .feature-card {
+      border-radius: 5px;
+      display: flex;
+      max-width: 100%;
+      width: 325px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 40px 46px 40px 45px;
+    }
+    
+    @media (max-width: 991px) {
+      .feature-card {
+        padding: 40px 20px;
+      }
+    }
+    
+    .feature-icon {
+      aspect-ratio: 1.22;
+      object-fit: contain;
+      object-position: center;
+      width: 72px;
+    }
+    
+    .feature-content {
+      display: flex;
+      margin-top: 30px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    
+    .feature-title {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.1px;
+    }
+    
+    .feature-description {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      margin-top: 10px;
+    }
+    
+    .security-section {
+      background-color: #f7f9fd;
+      display: flex;
+      justify-content: center;
+      padding: 60px 397px 60px 391px;
+    }
+    
+    @media (max-width: 991px) {
+      .security-section {
+        padding: 60px 20px;
+      }
+    }
+    
+    .security-container {
+      display: flex;
+      min-width: 240px;
+      width: 100%;
+      max-width: 940px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      flex: 1;
+      flex-basis: 0;
+    }
+    
+    @media (max-width: 991px) {
+      .security-container {
+        max-width: 100%;
+      }
+    }
+    
+    .security-heading {
+      color: #002332;
+      text-align: center;
+      font: 700 40px/1 Inter, sans-serif;
+    }
+    
+    .security-description {
+      align-self: stretch;
+      width: 100%;
+      color: #616d7e;
+      text-align: center;
+      padding: 32px 20px;
+      font: 400 16px/27px Inter, sans-serif;
+    }
+    
+    @media (max-width: 991px) {
+      .security-description {
+        max-width: 100%;
+      }
+    }
+    
+    .security-link {
+      display: flex;
+      width: 155px;
+      max-width: 100%;
+      padding-bottom: 45px;
+      flex-direction: column;
+    }
+    
+    .security-arrow {
+      display: flex;
+      min-height: 25px;
+      flex-direction: column;
+      overflow: hidden;
+      align-items: flex-end;
+      justify-content: center;
+      padding: 8px 0 8px 140px;
+    }
+    
+    @media (max-width: 991px) {
+      .security-arrow {
+        padding-left: 20px;
+      }
+    }
+    
+    .security-arrow-img {
+      aspect-ratio: 1.4;
+      object-fit: contain;
+      object-position: center;
+      width: 14px;
+    }
+    
+    .security-link-text {
+      color: #000;
+      text-align: center;
+      align-self: flex-start;
+      z-index: 10;
+      margin-top: -19px;
+      font: 600 16px/2 Inter, sans-serif;
+    }
+    </style>
+    
+    <section class="crypto-insurance-section">
+      <header class="header-container">
+        <div class="nav-wrapper">
+          <nav class="nav-content">
+            <div class="logo-column">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d3d7cdbb8047c3a91f40be41fb412569763254687661487784e51f6c6b350b8e?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Logo" class="logo" />
+            </div>
+            <div class="nav-column">
+              <div class="nav-container">
+                <ul class="nav-list">
+                  <li class="nav-item">About Us</li>
+                  <li class="nav-item-claims">Claims</li>
+                  <li class="nav-item-ecosystem">Ecosystem</li>
+                  <li class="nav-item-learn">
+                    <div class="nav-item-learn-content">
+                      <div class="button-menu">
+                        <span class="button-text">Learn</span>
+                        <div class="arrow-wrapper">
+                          <div class="arrow-icon">
+                            <div class="arrow-icon-fill">
+                              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1012a555b30186b8c369245014766637f970854b79c95a2be54ebb89a6723f9f?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Down arrow" class="arrow-img" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="nav-item-blog">Blog</li>
+                  <li class="nav-item">Contact us</li>
+                  <li class="nav-item-spacer"></li>
+                </ul>
+              </div>
+              <div class="cta-wrapper">
+                <div class="cta-button">
+                  <button class="cta-text">Buy Insurance</button>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <h1 class="hero-heading">
+          <span class="hero-heading-text">
+            The Crypto & Blockchain <br /> Insurance Alternative
+          </span>
+        </h1>
+      </header>
+      
+      <div class="hero-image">
+        <div class="hero-text-wrapper">
+          <p class="hero-text">
+            Cosmos is the industry-leading <br /> provider for onchain protection and security using the power of Blockchain Technology.
+          </p>
+        </div>
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7a6ca4c6c12975eb747e1570917ed73105e9f80ce396e619a0c3d1149b870afb?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Hero image" class="hero-img" />
+      </div>
+      
+      <section class="stats-section">
+        <h2 class="stats-heading">Deep capacity meets complete transparency</h2>
+        <div class="stats-container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-value">$5.0B</div>
+              <div class="stat-label">Cover Underwritten</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">$76M</div>
+              <div class="stat-label">Active Cover</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">$18M+</div>
+              <div class="stat-label">Claims Paid</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-value">$221M</div>
+              <div class="stat-label">Capital Pool</div>
+            </div>
+          </div>
+        </div>
+        <div class="explore-data">
+          <div class="explore-arrow">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7cd14b32f1618ddfa40e78f4aeba612ea2161d75a674801fb12b794cf7be6bd?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Right arrow" class="explore-arrow-img" />
+          </div>
+          <div class="explore-text">Explore data</div>
+        </div>
+      </section>
+    
+      <section class="cover-section">
+        <h2 class="cover-heading">
+          <span class="cover-heading-text">Comprehensive Cover</span>
+        </h2>
+        <p class="cover-description">Superior protection for a range of risks, designed to bring you peace of mind.</p>
+        <div class="cover-grid">
+          <div class="cover-row">
+            <div class="cover-column">
+              <div class="cover-item">
+                <div class="cover-icon">
+                  <div class="cover-icon-wrapper">
+                    <div class="cover-icon-fill">
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/822fda49f0e22b4f61c100fbb90c2e9ac16f17b743229f8ca0dd075f1a51b4f7?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Protocol Cover icon" class="cover-icon-img" />
+                    </div>
+                  </div>
+                </div>
+                <div class="cover-content">
+                  <h3 class="cover-title">Protocol Cover</h3>
+                  <p class="cover-description">Protect against failures in an individual protocol.</p>
+                </div>
+              </div>
+            </div>
+            <div class="cover-column">
+              <div class="cover-item">
+                <div class="cover-icon">
+                  <div class="cover-icon-wrapper">
+                    <div class="cover-icon-fill">
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a730e8340cd7efedaeeded7b31bca0c76574475de13a47a32e7ecb88f8d8b5ef?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="ETH Slashing Cover icon" class="cover-icon-img" />
+                    </div>
+                  </div>
+                </div>
+                <div class="cover-content">
+                  <h3 class="cover-title">ETH Slashing Cover</h3>
+                  <p class="cover-description">Protect your ETH validators against penalties and missed rewards.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cover-row">
+            <div class="cover-column">
+              <div class="cover-item">
+                <div class="cover-icon">
+                  <div class="cover-icon-wrapper">
+                    <div class="cover-icon-fill">
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7301e6829f5bfc4f9cfddc4fda73d54f8688e1ace3f66910ff82d5f5d6612086?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="D&O Cover icon" class="cover-icon-img" />
+                    </div>
+                  </div>
+                </div>
+                <div class="cover-content">
+                  <h3 class="cover-title">D&O Cover</h3>
+                  <p class="cover-description">Coming soon...</p>
+                </div>
+              </div>
+            </div>
+            <div class="cover-column">
+              <div class="cover-item">
+                <div class="cover-icon">
+                  <div class="cover-icon-wrapper">
+                    <div class="cover-icon-fill">
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b412521e4b1ab4954d4575da62e1094f5dcb97656adc71222f1864ecb27a756?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Real World Risk icon" class="cover-icon-img" />
+                    </div>
+                  </div>
+                </div>
+                <div class="cover-content">
+                  <h3 class="cover-title">Real World Risk</h3>
+                  <p class="cover-description">Coming soon...</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="explore-cover">
+          <div class="explore-cover-wrapper">
+            <div class="explore-cover-arrow">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2a12a1fcc291d4c65c42a72887c54f4bc886d03ab0a48963514253d3e9d57a1f?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Right arrow" class="explore-cover-img" />
+            </div>
+            <div class="explore-cover-text">Explore cover</div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="metamask-section">
+        <div class="metamask-container">
+          <p class="metamask-text">
+            Cosmos integrates with <span style="font-weight: 700; color: #820de7">MetaMask</span>, allowing members to share risks through a crypto-powered insurance platform. Expert teams manage pooled funds, underwrite risks, and offer coverage in a globally accessible marketplace.
+          </p>
+        </div>
+      </section>
+    
+      <section class="partners-section">
+        <div class="partners-row">
+          <div class="partner-logo">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f1bf9bc61b4008221f901c106eb3b9ad078fdd345131071a0a18b87d9156aee1?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Partner logo 1" class="partner-img" />
+          </div>
+          <div class="partner-logo">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/388d71865554d17657fac81436170097c67dfba0eb31231ddbebb20c2717001f?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Partner logo 2" class="partner-img" />
+          </div>
+          <div class="partner-logo">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3e86ba33c50a4fc6f2185b78ee9b778200092ced2f2361a76d8037ff9820c2bf?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Partner logo 3" class="partner-img" />
+          </div>
+          <div class="partner-logo">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/cb0a5ae23f15624204aadf49948e4d74e7db225beccb2fbb5903711bafcc0732?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Partner logo 4" class="partner-img" />
+          </div>
+          <div class="partner-logo">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/15a356c4bd72654f49d2af33a3bfecdaa7ce2e5d54b581050645243ef539a498?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Partner logo 5" class="partner-img" />
+          </div>
+          <div class="partner-logo">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/1fa6938ad890791df228bed7344a8c19e713ecbde4d88f5c8492afb0183f14f1?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Partner logo 6" class="partner-img" />
+          </div>
+        </div>
+      </section>
+    
+      <section class="features-section">
+        <div class="features-row">
+          <div class="feature-column">
+            <div class="feature-card">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bbcc6d1799cb252ccc4e937cf3c3d42f91db4a04ad8ba355d1256ae34c55af33?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Peace of Mind icon" class="feature-icon" />
+              <div class="feature-content">
+                <h3 class="feature-title">Peace of Mind</h3>
+                <p class="feature-description">So it really behaves like neither. <br /> Now we have given up.</p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-column">
+            <div class="feature-card">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/3c408008b64bd9dbaff71c7e6bf2b5597ac861fb41785a0a111f786c27de0f8a?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Set For Life icon" class="feature-icon" />
+              <div class="feature-content">
+                <h3 class="feature-title">Set For Life</h3>
+                <p class="feature-description">They were used to create the <br /> machines that launched</p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-column">
+            <div class="feature-card">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f923c7d04e991c61275341f44e32e50354267da078ca2c5c4a0602d302b7cacf?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="100% Satisfaction icon" class="feature-icon" />
+              <div class="feature-content">
+                <h3 class="feature-title">100% Satisfaction</h3>
+                <p class="feature-description">So it really behaves like neither. <br /> Now we have given up.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="security-section">
+        <div class="security-container">
+          <h2 class="security-heading">Security</h2>
+          <p class="security-description">
+            Security of the Nexus Mutual protocol is our highest priority, which is why our code has been reviewed by industry-leading auditors. Our team works with Immunefi to manage a bug bounty program, which incentivises responsible vulnerability disclosures.
+          </p>
+          <div class="security-link">
+            <div class="security-arrow">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce84c5e434464f16545ceb574f5a4500a8597bed4b853a4906f33df31c4375e1?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="Right arrow" class="security-arrow-img" />
+            </div>
+            <div class="security-link-text">Protocol security</div>
+          </div>
+        </div>
+      </section>
+    </section>

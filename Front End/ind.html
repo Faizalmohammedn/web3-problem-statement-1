@@ -1,0 +1,224 @@
+<style>
+    .insurance-section { border-radius: 0; display: flex; flex-direction: column; align-items: flex-start; font-family: Inter, sans-serif; }
+    .content-wrapper { align-self: flex-end; display: flex; width: 100%; max-width: 1454px; flex-direction: column; font-weight: 600; }
+    @media (max-width: 991px) { .content-wrapper { max-width: 100%; } }
+    .header { background-color: #fff; display: flex; width: 100%; flex-direction: column; align-items: flex-start; font-size: 14px; white-space: nowrap; line-height: 1; justify-content: center; padding: 24px 70px; }
+    @media (max-width: 991px) { .header { max-width: 100%; white-space: initial; padding: 0 20px; } }
+    .header-content { display: flex; width: 603px; max-width: 100%; gap: 20px; flex-wrap: wrap; justify-content: space-between; }
+    @media (max-width: 991px) { .header-content { white-space: initial; } }
+    .nav-links { display: flex; gap: 32px; }
+    @media (max-width: 991px) { .nav-links { white-space: initial; } }
+    .active-link { border-radius: 9999px; background-color: #f2f6ff; color: #0a2231; padding: 8px; }
+    @media (max-width: 991px) { .active-link { white-space: initial; } }
+    .nav-item { color: #777; margin: auto 0; }
+    .secondary-nav { display: flex; gap: 40px 46px; color: #777; margin: auto 0; }
+    @media (max-width: 991px) { .secondary-nav { white-space: initial; } }
+    .tab-container { border-radius: 9999px; background-color: #eff2f9; align-self: center; display: flex; margin-top: 37px; width: 576px; max-width: 100%; font-size: 16px; line-height: 1; flex-wrap: wrap; padding: 4px; }
+    .tab-active { border-radius: 9999px; background-color: #fff; color: #0a2231; flex-grow: 1; width: fit-content; padding: 12px 58px; }
+    @media (max-width: 991px) { .tab-active { padding: 0 20px; } }
+    .tab-inactive { border-radius: 9999px; background-color: #eff2f9; color: #4b4b4b; flex-grow: 1; width: fit-content; padding: 12px 58px; }
+    @media (max-width: 991px) { .tab-inactive { padding: 0 20px; } }
+    .action-bar { display: flex; width: 1133px; max-width: 100%; gap: 20px; flex-wrap: wrap; justify-content: space-between; margin: 28px 0 0 24px; }
+    .main-action { color: #0a2231; font-size: 21px; }
+    .secondary-action { color: #0cb783; font-size: 16px; line-height: 1; margin: auto 0; }
+    .listing-header { display: flex; width: 1135px; max-width: 100%; gap: 20px; font-size: 16px; color: #0a2231; line-height: 1; flex-wrap: wrap; justify-content: space-between; margin: 75px 0 0 37px; }
+    @media (max-width: 991px) { .listing-header { margin-top: 40px; } }
+    .listing-metrics { align-self: flex-start; display: flex; gap: 31px; }
+    .metric-item { flex-basis: auto; }
+    .divider { border-color: #e6e6e6; border-top-width: 1px; display: flex; margin-top: 6px; width: 1703px; max-width: 100%; height: 1px; }
+    .listing-item { align-self: center; display: flex; margin-top: 81px; width: 1119px; max-width: 100%; gap: 20px; flex-wrap: wrap; justify-content: space-between; }
+    @media (max-width: 991px) { .listing-item { margin-top: 40px; } }
+    .listing-info { display: flex; flex-direction: column; align-items: flex-start; margin: auto 0; }
+    .listing-title { display: flex; flex-direction: column; }
+    .listing-name { color: #0a2231; font-size: 16px; font-weight: 600; line-height: 1; }
+    .listing-type { color: #777; font-size: 14px; font-weight: 400; line-height: 1; align-self: flex-start; margin-top: 8px; }
+    .listing-details { display: flex; flex-direction: column; font-size: 16px; color: #0a2231; font-weight: 600; line-height: 1; }
+    .listing-stats { align-self: flex-end; display: flex; gap: 19px; white-space: nowrap; }
+    @media (max-width: 991px) { .listing-stats { margin-right: 10px; white-space: initial; } }
+    .stat-value { margin: auto 0; }
+    .stat-icon { display: flex; gap: 8px; }
+    @media (max-width: 991px) { .stat-icon { white-space: initial; } }
+    .icon { aspect-ratio: 1; object-fit: contain; object-position: center; width: 24px; }
+    .listing-capacity { color: #4b4b4b; font-weight: 400; margin-top: 8px; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    </style>
+    
+    <section class="insurance-section">
+      <div class="content-wrapper">
+        <header class="header">
+          <nav class="header-content">
+            <div class="nav-links">
+              <a href="#" class="active-link">Insurance</a>
+              <a href="#" class="nav-item">Dashboard</a>
+            </div>
+            <div class="secondary-nav">
+              <a href="#" class="nav-item">NXM</a>
+              <a href="#" class="nav-item">Governance</a>
+            </div>
+          </nav>
+        </header>
+        
+        <div class="tab-container">
+          <button class="tab-active">Buy Insurance</button>
+          <button class="tab-inactive">Your Insurance</button>
+        </div>
+        
+        <div class="action-bar">
+          <h1 class="main-action">Browse Listings</h1>
+          <button class="secondary-action">Request Capacity for a Listing</button>
+        </div>
+        
+        <div class="listing-header">
+          <span>141 Listings</span>
+          <div class="listing-metrics">
+            <span class="metric-item">Annual Fee</span>
+            <span>/</span>
+            <span class="metric-item">Available Capacity</span>
+          </div>
+        </div>
+        
+        <hr class="divider">
+        
+        <article class="listing-item">
+          <div class="listing-info">
+            <div class="listing-title">
+              <h2 class="listing-name">Aave v3</h2>
+              <span class="listing-type">Protocol</span>
+            </div>
+            <h3 class="listing-name">Morpho + Morpho Vaults</h3>
+            <span class="listing-type">Bundled Protocol Cover</span>
+          </div>
+          <div class="listing-details">
+            <div class="listing-stats">
+              <span class="stat-value">2.35</span>
+              <div class="stat-icon">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f3d454040344fa0cf0f40571f6adf038658d7f88cb8ec886eb6b3861cc46c63c?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="" class="icon">
+                <span class="stat-value">6.48</span>
+              </div>
+            </div>
+            <span class="listing-capacity">8.3k ETH / 24.4m USD</span>
+            <div class="listing-stats">
+              <span class="stat-value">3.7</span>
+              <div class="stat-icon">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c696025c21079bd1569afe866746f686f2d3a051ee79e62e444c565919304486?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="" class="icon">
+                <span class="stat-value">7.93</span>
+              </div>
+            </div>
+            <span class="listing-capacity">1.4k ETH / 4.1m USD</span>
+          </div>
+        </article>
+        
+        <hr class="divider">
+        
+        <article class="listing-item">
+          <div class="listing-info">
+            <div class="listing-title">
+              <h2 class="listing-name">Aerodrome</h2>
+              <span class="listing-type">Protocol</span>
+            </div>
+          </div>
+          <div class="listing-details">
+            <div class="listing-stats">
+              <div class="stat-icon">
+                <span class="stat-value">1.9</span>
+                <span>%</span>
+              </div>
+              <div class="stat-icon">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/10fe8cce4b259caceb2f31941118a5f6f6d71058e96199318b50fe60722f8d71?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="" class="icon">
+                <span class="stat-value">9.74</span>
+              </div>
+            </div>
+            <span class="listing-capacity">1.1k ETH / 3.4m USD</span>
+          </div>
+        </article>
+        
+        <hr class="divider">
+        
+        <article class="listing-item">
+          <div class="listing-info">
+            <div class="listing-title">
+              <h2 class="listing-name">ExtraFi</h2>
+              <span class="listing-type">Protocol</span>
+            </div>
+          </div>
+          <div class="listing-details">
+            <div class="listing-stats">
+              <span class="stat-value">3.23</span>
+              <div class="stat-icon">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/561a1659c149d0a1e1f147f377ecf15831af4e31050593863524c457f2df6c7d?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="" class="icon">
+                <span class="stat-value">10</span>
+              </div>
+            </div>
+            <span class="listing-capacity">1.8k ETH / 5.3m USD</span>
+          </div>
+        </article>
+        
+        <hr class="divider">
+        
+        <article class="listing-item">
+          <div class="listing-info">
+            <div class="listing-title">
+              <h2 class="listing-name">Hyperliquid</h2>
+              <span class="listing-type">Protocol</span>
+            </div>
+          </div>
+          <div class="listing-details">
+            <div class="listing-stats">
+              <span class="stat-value">3.82</span>
+              <div class="stat-icon">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/c3fa0a961fd770cceae8b97975853718a49370ce09cebbcb709663085206f2e3?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="" class="icon">
+                <span class="stat-value">8.64</span>
+              </div>
+            </div>
+            <span class="listing-capacity">1.6k ETH / 4.8m USD</span>
+          </div>
+        </article>
+        
+        <hr class="divider">
+        
+        <article class="listing-item">
+          <div class="listing-info">
+            <div class="listing-title">
+              <h2 class="listing-name">Uniswap v3</h2>
+              <span class="listing-type">Protocol</span>
+            </div>
+          </div>
+          <div class="listing-details">
+            <div class="listing-stats">
+              <div class="stat-icon">
+                <span class="stat-value">1.17</span>
+                <span>%</span>
+              </div>
+              <div class="stat-icon">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2ecf89b69b2bfcb70d7c4a047a34a76eb8af1c48fd3731d6ff53a86fc1063d02?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="" class="icon">
+                <span class="stat-value">2.76</span>
+              </div>
+            </div>
+            <span class="listing-capacity">7.5k ETH / 21.8m USD</span>
+          </div>
+        </article>
+        
+        <hr class="divider">
+        
+        <article class="listing-item">
+          <div class="listing-info">
+            <div class="listing-title">
+              <h2 class="listing-name">Beefy + Aerodrome</h2>
+              <span class="listing-type">Bundled Protocol Cover</span>
+            </div>
+          </div>
+          <div class="listing-details">
+            <div class="listing-stats">
+              <span class="stat-value">2.94</span>
+              <div class="stat-icon">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9c9be189683c1d5920b46b5c753b724dc8891ffdb4c7eb8d7512d10598951d88?placeholderIfAbsent=true&apiKey=d88dee50db2742738eec800ff155df05" alt="" class="icon">
+                <span class="stat-value">4.7</span>
+              </div>
+            </div>
+            <span class="listing-capacity">1k ETH / 3m USD</span>
+          </div>
+        </article>
+        
+        <hr class="divider">
+      </div>
+    </section>
