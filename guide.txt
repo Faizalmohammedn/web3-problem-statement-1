@@ -1,0 +1,37 @@
+
+Overview
+
+Our decentralized insurance platform uses the Ethereum blockchain to enable transparent and secure insurance transactions. All actions, from purchasing policies to filing claims, are completed through MetaMask, a trusted Ethereum wallet extension.
+
+Getting Started with MetaMask and Ethereum
+
+	1.	Install MetaMask
+	•	Download the MetaMask browser extension from https://metamask.io/.
+	•	Set up a new Ethereum wallet, or import an existing one using your seed phrase.
+	2.	Fund Your Wallet
+	•	Ensure your MetaMask wallet has sufficient Ether (ETH) for transactions.
+	•	You can purchase ETH through MetaMask or transfer it from another wallet.
+
+Connecting MetaMask to the Platform
+
+	1.	Log into the Platform
+	•	Visit our decentralized insurance platform URL.
+	•	Click “Connect Wallet,” and select MetaMask as your wallet provider.
+	•	Approve the connection in MetaMask.
+	2.	Sign Up/Log In
+	•	Sign up with your credentials. Your Ethereum wallet (via MetaMask) will be linked to your account for secure transactions on the platform.
+
+Using Ethereum for Transactions
+
+	1.	Purchasing an Insurance Policy
+	•	Browse available policies under the “Policies” section.
+	•	Choose your policy and initiate the transaction.
+	•	Confirm the transaction in MetaMask. The purchase will be recorded on the Ethereum blockchain.
+	2.	Filing a Claim
+	•	Go to the “Claims” section and select the policy you want to claim under.
+	•	Provide the necessary documentation.
+	•	Confirm the claim transaction in MetaMask. All claim data will be secured and recorded immutably on Ethereum.
+	3.	Viewing Transaction History
+	•	Your transaction history is visible on the platform’s dashboard.
+	•	Additionally, you can verify any transaction on Etherscan using the transaction hash provided in MetaMask.
+
